@@ -1,0 +1,5160 @@
+{
+  "nodes": [
+    {
+      "id": "mongo_shell_js",
+      "label": "mongo-shell.js",
+      "file_type": "code",
+      "source_file": "mongo-shell.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "folio_rca_tool_mongo_shell_connect",
+      "label": "connect()",
+      "file_type": "code",
+      "source_file": "mongo-shell.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "folio_rca_tool_mongo_shell_runqueries",
+      "label": "runQueries()",
+      "file_type": "code",
+      "source_file": "mongo-shell.js",
+      "source_location": "L24"
+    },
+    {
+      "id": "findmissinglines_js",
+      "label": "findMissingLines.js",
+      "file_type": "code",
+      "source_file": "findMissingLines.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_transfervalidation_integration_test_ts",
+      "label": "transferValidation.integration.test.ts",
+      "file_type": "code",
+      "source_file": "test/transferValidation.integration.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_transfervalidation_integration_test_runalltests",
+      "label": "runAllTests()",
+      "file_type": "code",
+      "source_file": "test/transferValidation.integration.test.ts",
+      "source_location": "L329"
+    },
+    {
+      "id": "test_fixtures_transfertestfixtures_ts",
+      "label": "transferTestFixtures.ts",
+      "file_type": "code",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "fixtures_transfertestfixtures_getalltestfixtures",
+      "label": "getAllTestFixtures()",
+      "file_type": "code",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L440"
+    },
+    {
+      "id": "fixtures_transfertestfixtures_getexpectedresults",
+      "label": "getExpectedResults()",
+      "file_type": "code",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L457"
+    },
+    {
+      "id": "fixtures_transfertestfixtures_validatetestresult",
+      "label": "validateTestResult()",
+      "file_type": "code",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L464"
+    },
+    {
+      "id": "server_transferquerygenerator_ts",
+      "label": "transferQueryGenerator.ts",
+      "file_type": "code",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_transferquerygenerator_generatetransferquery",
+      "label": "generateTransferQuery()",
+      "file_type": "code",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "server_transferquerygenerator_generatetransferquerysimple",
+      "label": "generateTransferQuerySimple()",
+      "file_type": "code",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L112"
+    },
+    {
+      "id": "server_transferquerygenerator_describetransferquery",
+      "label": "describeTransferQuery()",
+      "file_type": "code",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L146"
+    },
+    {
+      "id": "server_transferquerygenerator_gettransferqueryresponseschema",
+      "label": "getTransferQueryResponseSchema()",
+      "file_type": "code",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L169"
+    },
+    {
+      "id": "server_userrules_ts",
+      "label": "userRules.ts",
+      "file_type": "code",
+      "source_file": "server/userRules.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_userrules_getrules",
+      "label": "getRules()",
+      "file_type": "code",
+      "source_file": "server/userRules.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "server_userrules_saverules",
+      "label": "saveRules()",
+      "file_type": "code",
+      "source_file": "server/userRules.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "server_userrules_parserules",
+      "label": "parseRules()",
+      "file_type": "code",
+      "source_file": "server/userRules.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "server_userrules_matchesconditions",
+      "label": "matchesConditions()",
+      "file_type": "code",
+      "source_file": "server/userRules.ts",
+      "source_location": "L76"
+    },
+    {
+      "id": "server_userrules_applyuserrules",
+      "label": "applyUserRules()",
+      "file_type": "code",
+      "source_file": "server/userRules.ts",
+      "source_location": "L86"
+    },
+    {
+      "id": "server_transactionflattener_ts",
+      "label": "transactionFlattener.ts",
+      "file_type": "code",
+      "source_file": "server/transactionFlattener.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_transactionflattener_flattentransactions",
+      "label": "flattenTransactions()",
+      "file_type": "code",
+      "source_file": "server/transactionFlattener.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "server_graphqlexpander_ts",
+      "label": "graphqlExpander.ts",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_graphqlexpander_extracttemplateliterals",
+      "label": "extractTemplateLiterals()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "server_graphqlexpander_loadfragments",
+      "label": "loadFragments()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "server_graphqlexpander_resolvenestedreferences",
+      "label": "resolveNestedReferences()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "server_graphqlexpander_getfragment",
+      "label": "getFragment()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L84"
+    },
+    {
+      "id": "server_graphqlexpander_getallfragments",
+      "label": "getAllFragments()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L91"
+    },
+    {
+      "id": "server_graphqlexpander_extractnamedgqlquery",
+      "label": "extractNamedGqlQuery()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L108"
+    },
+    {
+      "id": "server_graphqlexpander_resolveallrefs",
+      "label": "resolveAllRefs()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L140"
+    },
+    {
+      "id": "server_graphqlexpander_expandqueries",
+      "label": "expandQueries()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L155"
+    },
+    {
+      "id": "server_graphqlexpander_getexpandedquery",
+      "label": "getExpandedQuery()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L187"
+    },
+    {
+      "id": "server_graphqlexpander_buildvariablestemplate",
+      "label": "buildVariablesTemplate()",
+      "file_type": "code",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L194"
+    },
+    {
+      "id": "server_transferreferenceextractor_ts",
+      "label": "transferReferenceExtractor.ts",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_transferreferenceextractor_extractreferences",
+      "label": "extractReferences()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "server_transferreferenceextractor_extractreferencevalues",
+      "label": "extractReferenceValues()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L66"
+    },
+    {
+      "id": "server_transferreferenceextractor_extractreferencemap",
+      "label": "extractReferenceMap()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L94"
+    },
+    {
+      "id": "server_transferreferenceextractor_getpresentreferencefields",
+      "label": "getPresentReferenceFields()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L113"
+    },
+    {
+      "id": "server_transferreferenceextractor_getnontaxreferences",
+      "label": "getNonTaxReferences()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L133"
+    },
+    {
+      "id": "server_transferreferenceextractor_getfirstnontaxreference",
+      "label": "getFirstNonTaxReference()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L152"
+    },
+    {
+      "id": "server_transferreferenceextractor_countreferences",
+      "label": "countReferences()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L175"
+    },
+    {
+      "id": "server_transferreferenceextractor_hasreferences",
+      "label": "hasReferences()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L185"
+    },
+    {
+      "id": "server_transferreferenceextractor_hastaxreference",
+      "label": "hasTaxReference()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L195"
+    },
+    {
+      "id": "server_transferreferenceextractor_findmatchingreference",
+      "label": "findMatchingReference()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L208"
+    },
+    {
+      "id": "server_orchestrator_ts",
+      "label": "orchestrator.ts",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_orchestrator_loadrulesheet",
+      "label": "loadRuleSheet()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "server_orchestrator_getsessionrules",
+      "label": "getSessionRules()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "server_orchestrator_applyrulestostep",
+      "label": "applyRulesToStep()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L72"
+    },
+    {
+      "id": "server_orchestrator_evaluaterulecondition",
+      "label": "evaluateRuleCondition()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L110"
+    },
+    {
+      "id": "server_orchestrator_genid",
+      "label": "genId()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L122"
+    },
+    {
+      "id": "server_orchestrator_plannextstep",
+      "label": "planNextStep()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L127"
+    },
+    {
+      "id": "server_orchestrator_detectaccounttype",
+      "label": "detectAccountType()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L192"
+    },
+    {
+      "id": "server_orchestrator_createsession",
+      "label": "createSession()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L206"
+    },
+    {
+      "id": "server_orchestrator_advancesession",
+      "label": "advanceSession()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L224"
+    },
+    {
+      "id": "server_orchestrator_respondtostep",
+      "label": "respondToStep()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L330"
+    },
+    {
+      "id": "server_orchestrator_getsession",
+      "label": "getSession()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L381"
+    },
+    {
+      "id": "server_orchestrator_executemongostep",
+      "label": "executeMongoStep()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L387"
+    },
+    {
+      "id": "server_orchestrator_executeinternalstep",
+      "label": "executeInternalStep()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L425"
+    },
+    {
+      "id": "server_orchestrator_extractqueryparams",
+      "label": "extractQueryParams()",
+      "file_type": "code",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L454"
+    },
+    {
+      "id": "server_builtinrules_ts",
+      "label": "builtInRules.ts",
+      "file_type": "code",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_builtinrules_tracecodepath",
+      "label": "traceCodePath()",
+      "file_type": "code",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L90"
+    },
+    {
+      "id": "server_builtinrules_applybuiltinrules",
+      "label": "applyBuiltInRules()",
+      "file_type": "code",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L197"
+    },
+    {
+      "id": "server_builtinrules_validatepkgtransaction",
+      "label": "validatePkgTransaction()",
+      "file_type": "code",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L231"
+    },
+    {
+      "id": "server_builtinrules_getbuiltinrulesdescription",
+      "label": "getBuiltInRulesDescription()",
+      "file_type": "code",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L252"
+    },
+    {
+      "id": "server_llm_ts",
+      "label": "llm.ts",
+      "file_type": "code",
+      "source_file": "server/llm.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_llm_isollamaavailable",
+      "label": "isOllamaAvailable()",
+      "file_type": "code",
+      "source_file": "server/llm.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "server_llm_buildllmcontext",
+      "label": "buildLlmContext()",
+      "file_type": "code",
+      "source_file": "server/llm.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "server_llm_extractmethod",
+      "label": "extractMethod()",
+      "file_type": "code",
+      "source_file": "server/llm.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "server_llm_analyzewithllm",
+      "label": "analyzeWithLlm()",
+      "file_type": "code",
+      "source_file": "server/llm.ts",
+      "source_location": "L70"
+    },
+    {
+      "id": "server_transformoutsimulator_ts",
+      "label": "transformOutSimulator.ts",
+      "file_type": "code",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_transformoutsimulator_simulatetransformout",
+      "label": "simulateTransformOut()",
+      "file_type": "code",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "server_transformoutsimulator_removeparentfromchildren",
+      "label": "removeParentFromChildren()",
+      "file_type": "code",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L142"
+    },
+    {
+      "id": "server_transformoutsimulator_simulatefolioouttransform",
+      "label": "simulateFolioOutTransform()",
+      "file_type": "code",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L154"
+    },
+    {
+      "id": "server_sourceloader_ts",
+      "label": "sourceLoader.ts",
+      "file_type": "code",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_sourceloader_loadsourcefiles",
+      "label": "loadSourceFiles()",
+      "file_type": "code",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "server_sourceloader_getsourcefile",
+      "label": "getSourceFile()",
+      "file_type": "code",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "server_sourceloader_getallsourcefiles",
+      "label": "getAllSourceFiles()",
+      "file_type": "code",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "server_sourceloader_getsourcefilelist",
+      "label": "getSourceFileList()",
+      "file_type": "code",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "server_correctionengine_ts",
+      "label": "correctionEngine.ts",
+      "file_type": "code",
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_correctionengine_correctpayload",
+      "label": "correctPayload()",
+      "file_type": "code",
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "server_comparisonengine_ts",
+      "label": "comparisonEngine.ts",
+      "file_type": "code",
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_comparisonengine_comparetransactions",
+      "label": "compareTransactions()",
+      "file_type": "code",
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "server_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_index_generaterandomnumbers",
+      "label": "generateRandomNumbers()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "server_index_formatfolioamount",
+      "label": "formatFolioAmount()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "server_index_gettransactiontype",
+      "label": "getTransactionType()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "server_index_getfolioamount",
+      "label": "getFolioAmount()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L73"
+    },
+    {
+      "id": "server_index_genlineitemno",
+      "label": "genLineItemNo()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L420"
+    },
+    {
+      "id": "server_index_addtx",
+      "label": "addTx()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L426"
+    },
+    {
+      "id": "server_index_extractfromfolios",
+      "label": "extractFromFolios()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L433"
+    },
+    {
+      "id": "server_index_extractfromroot",
+      "label": "extractFromRoot()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L449"
+    },
+    {
+      "id": "server_index_deepsearch",
+      "label": "deepSearch()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L487"
+    },
+    {
+      "id": "server_index_debugkeys",
+      "label": "debugKeys()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L520"
+    },
+    {
+      "id": "server_index_indextxdetails",
+      "label": "indexTxDetails()",
+      "file_type": "code",
+      "source_file": "server/index.ts",
+      "source_location": "L542"
+    },
+    {
+      "id": "server_mongoquerygenerator_ts",
+      "label": "mongoQueryGenerator.ts",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_mongoquerygenerator_loadtenantlist",
+      "label": "loadTenantList()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "server_mongoquerygenerator_parsefolioid",
+      "label": "parseFolioId()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L104"
+    },
+    {
+      "id": "server_mongoquerygenerator_lookuptenant",
+      "label": "lookupTenant()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L125"
+    },
+    {
+      "id": "server_mongoquerygenerator_getalltenants",
+      "label": "getAllTenants()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L132"
+    },
+    {
+      "id": "server_mongoquerygenerator_generatemongoquery",
+      "label": "generateMongoQuery()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L140"
+    },
+    {
+      "id": "server_mongoquerygenerator_generateaccountlookupquery",
+      "label": "generateAccountLookupQuery()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L232"
+    },
+    {
+      "id": "server_mongoquerygenerator_autogeneratequeries",
+      "label": "autoGenerateQueries()",
+      "file_type": "code",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L240"
+    },
+    {
+      "id": "server_mongoexecutor_ts",
+      "label": "mongoExecutor.ts",
+      "file_type": "code",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_mongoexecutor_getclient",
+      "label": "getClient()",
+      "file_type": "code",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "server_mongoexecutor_findaccountid",
+      "label": "findAccountId()",
+      "file_type": "code",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "server_mongoexecutor_executeledgerquery",
+      "label": "executeLedgerQuery()",
+      "file_type": "code",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "server_mongoexecutor_closemongoconnection",
+      "label": "closeMongoConnection()",
+      "file_type": "code",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L146"
+    },
+    {
+      "id": "server_transferreferenceindexer_ts",
+      "label": "transferReferenceIndexer.ts",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex",
+      "label": "FolioLineIndex",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_addline",
+      "label": ".addLine()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_getlinebyid",
+      "label": ".getLineById()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L43"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_getlinesbyitemid",
+      "label": ".getLinesByItemId()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_has",
+      "label": ".has()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_size",
+      "label": ".size()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L70"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_clear",
+      "label": ".clear()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "server_transferreferenceindexer_foliolineindex_getalllines",
+      "label": ".getAllLines()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex",
+      "label": "LedgerTransactionIndex",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L93"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex_addtransaction",
+      "label": ".addTransaction()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L103"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex_indexreference",
+      "label": ".indexReference()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L113"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex_gettransaction",
+      "label": ".getTransaction()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L126"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex_gettransactionsbyreference",
+      "label": ".getTransactionsByReference()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L136"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex_clear",
+      "label": ".clear()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L146"
+    },
+    {
+      "id": "server_transferreferenceindexer_ledgertransactionindex_size",
+      "label": ".size()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L154"
+    },
+    {
+      "id": "server_transferreferenceindexer_indexfoliolines",
+      "label": "indexFolioLines()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L165"
+    },
+    {
+      "id": "server_transferreferenceindexer_indexledgertransactions",
+      "label": "indexLedgerTransactions()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L201"
+    },
+    {
+      "id": "server_transferreferenceindexer_createindexes",
+      "label": "createIndexes()",
+      "file_type": "code",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L250"
+    },
+    {
+      "id": "server_csvparser_ts",
+      "label": "csvParser.ts",
+      "file_type": "code",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_csvparser_derivelineitemno",
+      "label": "deriveLineItemNo()",
+      "file_type": "code",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "server_csvparser_parsecsvbuffer",
+      "label": "parseCsvBuffer()",
+      "file_type": "code",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "server_models_transferreferencemodel_ts",
+      "label": "transferReferenceModel.ts",
+      "file_type": "code",
+      "source_file": "server/models/transferReferenceModel.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_transfermatchers_simpletransfermatcher_ts",
+      "label": "simpleTransferMatcher.ts",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "transfermatchers_simpletransfermatcher_matchsimpletransfer",
+      "label": "matchSimpleTransfer()",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "transfermatchers_simpletransfermatcher_matchsimpletransferfromline",
+      "label": "matchSimpleTransferFromLine()",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L122"
+    },
+    {
+      "id": "transfermatchers_simpletransfermatcher_summarizereferences",
+      "label": "summarizeReferences()",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L145"
+    },
+    {
+      "id": "transfermatchers_simpletransfermatcher_countavailablereferences",
+      "label": "countAvailableReferences()",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L163"
+    },
+    {
+      "id": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "label": "taxBasedTransferMatcher.ts",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "transfermatchers_taxbasedtransfermatcher_matchtaxbasedtransfer",
+      "label": "matchTaxBasedTransfer()",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "transfermatchers_taxbasedtransfermatcher_formatvalidationpath",
+      "label": "formatValidationPath()",
+      "file_type": "code",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L263"
+    },
+    {
+      "id": "server_transfervalidators_errorhandler_ts",
+      "label": "errorHandler.ts",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "transfervalidators_errorhandler_createtransfererror",
+      "label": "createTransferError()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errormissingtransferdetails",
+      "label": "errorMissingTransferDetails()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errormissingtransferlineitem",
+      "label": "errorMissingTransferLineItem()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L66"
+    },
+    {
+      "id": "transfervalidators_errorhandler_erroremptyreferences",
+      "label": "errorEmptyReferences()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L78"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errortaxreferencenotfound",
+      "label": "errorTaxReferenceNotFound()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L90"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errornonontaxreferences",
+      "label": "errorNoNonTaxReferences()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L102"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorledgertransactionnotfound",
+      "label": "errorLedgerTransactionNotFound()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L114"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorfoliolinenotfound",
+      "label": "errorFolioLineNotFound()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L126"
+    },
+    {
+      "id": "transfervalidators_errorhandler_erroritemidmismatch",
+      "label": "errorItemIdMismatch()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L138"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorlineidmismatch",
+      "label": "errorLineIdMismatch()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L154"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorcircularreference",
+      "label": "errorCircularReference()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L169"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorinvalidjson",
+      "label": "errorInvalidJson()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L181"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorinvalidpayloadstructure",
+      "label": "errorInvalidPayloadStructure()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L193"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorvalidationtimeout",
+      "label": "errorValidationTimeout()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L205"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errorunknown",
+      "label": "errorUnknown()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L217"
+    },
+    {
+      "id": "transfervalidators_errorhandler_errortousermessage",
+      "label": "errorToUserMessage()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L229"
+    },
+    {
+      "id": "transfervalidators_errorhandler_isrecoverableerror",
+      "label": "isRecoverableError()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L265"
+    },
+    {
+      "id": "transfervalidators_errorhandler_shouldblockpayload",
+      "label": "shouldBlockPayload()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L272"
+    },
+    {
+      "id": "transfervalidators_errorhandler_detectcircularreference",
+      "label": "detectCircularReference()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L284"
+    },
+    {
+      "id": "server_transfervalidators_batchtransfervalidator_ts",
+      "label": "batchTransferValidator.ts",
+      "file_type": "code",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "transfervalidators_batchtransfervalidator_validatetransferpayload",
+      "label": "validateTransferPayload()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "transfervalidators_batchtransfervalidator_validatetransferpayloadsummary",
+      "label": "validateTransferPayloadSummary()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L172"
+    },
+    {
+      "id": "transfervalidators_batchtransfervalidator_formatbatchvalidationresult",
+      "label": "formatBatchValidationResult()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L190"
+    },
+    {
+      "id": "transfervalidators_batchtransfervalidator_serializebatchresult",
+      "label": "serializeBatchResult()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L247"
+    },
+    {
+      "id": "server_transfervalidators_combinedtransfervalidator_ts",
+      "label": "combinedTransferValidator.ts",
+      "file_type": "code",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "label": "validateTransferReference()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "transfervalidators_combinedtransfervalidator_formatvalidationresult",
+      "label": "formatValidationResult()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L217"
+    },
+    {
+      "id": "transfervalidators_combinedtransfervalidator_tracevalidationpath",
+      "label": "traceValidationPath()",
+      "file_type": "code",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L251"
+    },
+    {
+      "id": "client_app_js",
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "client_app_toast",
+      "label": "toast()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L27"
+    },
+    {
+      "id": "client_app_showqueryapproval",
+      "label": "showQueryApproval()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L40"
+    },
+    {
+      "id": "client_app_closequeryapproval",
+      "label": "closeQueryApproval()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L62"
+    },
+    {
+      "id": "client_app_approvequeryexecution",
+      "label": "approveQueryExecution()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L72"
+    },
+    {
+      "id": "client_app_copytext",
+      "label": "copyText()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L106"
+    },
+    {
+      "id": "client_app_copymergedpayload",
+      "label": "copyMergedPayload()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L112"
+    },
+    {
+      "id": "client_app_jsonparse",
+      "label": "jsonParse()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L117"
+    },
+    {
+      "id": "client_app_rendertable",
+      "label": "renderTable()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L122"
+    },
+    {
+      "id": "client_app_badge",
+      "label": "badge()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L131"
+    },
+    {
+      "id": "client_app_showcodetrace",
+      "label": "showCodeTrace()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L135"
+    },
+    {
+      "id": "client_app_runcomparison",
+      "label": "runComparison()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L173"
+    },
+    {
+      "id": "client_app_rendercomparisonresults",
+      "label": "renderComparisonResults()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L227"
+    },
+    {
+      "id": "client_app_computebalancesummaryhtml",
+      "label": "computeBalanceSummaryHtml()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L355"
+    },
+    {
+      "id": "client_app_fetchresendqueryformissing",
+      "label": "fetchResendQueryForMissing()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L377"
+    },
+    {
+      "id": "client_app_resolvemissingtransactions",
+      "label": "resolveMissingTransactions()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L395"
+    },
+    {
+      "id": "client_app_renderjsoncomparator",
+      "label": "renderJsonComparator()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L496"
+    },
+    {
+      "id": "client_app_jcjumpto",
+      "label": "jcJumpTo()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L534"
+    },
+    {
+      "id": "client_app_jcgonext",
+      "label": "jcGoNext()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L560"
+    },
+    {
+      "id": "client_app_jcgoprev",
+      "label": "jcGoPrev()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L565"
+    },
+    {
+      "id": "client_app_syncjsoncomparatorscroll",
+      "label": "syncJsonComparatorScroll()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L571"
+    },
+    {
+      "id": "client_app_generateresendquery",
+      "label": "generateResendQuery()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L580"
+    },
+    {
+      "id": "client_app_constructpayload",
+      "label": "constructPayload()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L599"
+    },
+    {
+      "id": "client_app_generatemongoquery",
+      "label": "generateMongoQuery()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L631"
+    },
+    {
+      "id": "client_app_executemongoquery",
+      "label": "executeMongoQuery()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L673"
+    },
+    {
+      "id": "client_app_loadrules",
+      "label": "loadRules()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L752"
+    },
+    {
+      "id": "client_app_saverules",
+      "label": "saveRules()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L760"
+    },
+    {
+      "id": "client_app_loadbuiltinrules",
+      "label": "loadBuiltInRules()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L773"
+    },
+    {
+      "id": "client_app_checkllmstatus",
+      "label": "checkLlmStatus()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L786"
+    },
+    {
+      "id": "client_app_runllmanalysis",
+      "label": "runLlmAnalysis()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L796"
+    },
+    {
+      "id": "client_app_startorchestrator",
+      "label": "startOrchestrator()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L833"
+    },
+    {
+      "id": "client_app_advanceorchestrator",
+      "label": "advanceOrchestrator()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L865"
+    },
+    {
+      "id": "client_app_handleorchpending",
+      "label": "handleOrchPending()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L879"
+    },
+    {
+      "id": "client_app_orchapprovestep",
+      "label": "orchApproveStep()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L902"
+    },
+    {
+      "id": "client_app_orchmodifystep",
+      "label": "orchModifyStep()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L925"
+    },
+    {
+      "id": "client_app_orchrejectstep",
+      "label": "orchRejectStep()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L948"
+    },
+    {
+      "id": "client_app_renderorchtimeline",
+      "label": "renderOrchTimeline()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L962"
+    },
+    {
+      "id": "client_app_showorchresult",
+      "label": "showOrchResult()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L982"
+    },
+    {
+      "id": "client_app_generatetransferquery",
+      "label": "generateTransferQuery()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L1009"
+    },
+    {
+      "id": "client_app_validatealltransfers",
+      "label": "validateAllTransfers()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L1057"
+    },
+    {
+      "id": "client_app_debugsingletransfer",
+      "label": "debugSingleTransfer()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L1190"
+    },
+    {
+      "id": "client_app_tracetransferreference",
+      "label": "traceTransferReference()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L1265"
+    },
+    {
+      "id": "client_app_executemongoquerywithapproval",
+      "label": "executeMongoQueryWithApproval()",
+      "file_type": "code",
+      "source_file": "client/app.js",
+      "source_location": "L1353"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mongo_shell_js",
+      "target": "mongodb",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "mongo-shell.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "mongo_shell_js",
+      "target": "oidc_plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "mongo-shell.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "mongo_shell_js",
+      "target": "folio_rca_tool_mongo_shell_connect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mongo-shell.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "mongo_shell_js",
+      "target": "folio_rca_tool_mongo_shell_runqueries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mongo-shell.js",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "test_transfervalidation_integration_test_ts",
+      "target": "server_transfervalidators_batchtransfervalidator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test/transferValidation.integration.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "test_transfervalidation_integration_test_ts",
+      "target": "test_fixtures_transfertestfixtures_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test/transferValidation.integration.test.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "test_transfervalidation_integration_test_ts",
+      "target": "test_transfervalidation_integration_test_runalltests",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/transferValidation.integration.test.ts",
+      "source_location": "L329",
+      "weight": 1.0
+    },
+    {
+      "source": "test_fixtures_transfertestfixtures_ts",
+      "target": "fixtures_transfertestfixtures_getalltestfixtures",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L440",
+      "weight": 1.0
+    },
+    {
+      "source": "test_fixtures_transfertestfixtures_ts",
+      "target": "fixtures_transfertestfixtures_getexpectedresults",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L457",
+      "weight": 1.0
+    },
+    {
+      "source": "test_fixtures_transfertestfixtures_ts",
+      "target": "fixtures_transfertestfixtures_validatetestresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/fixtures/transferTestFixtures.ts",
+      "source_location": "L464",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferquerygenerator_ts",
+      "target": "server_transferquerygenerator_generatetransferquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferquerygenerator_ts",
+      "target": "server_transferquerygenerator_generatetransferquerysimple",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferquerygenerator_ts",
+      "target": "server_transferquerygenerator_describetransferquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferquerygenerator_ts",
+      "target": "server_transferquerygenerator_gettransferqueryresponseschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferQueryGenerator.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "server_userrules_getrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "server_userrules_saverules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "server_userrules_parserules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "server_userrules_matchesconditions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_ts",
+      "target": "server_userrules_applyuserrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_applyuserrules",
+      "target": "server_userrules_getrules",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "server_userrules_applyuserrules",
+      "target": "server_userrules_parserules",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/userRules.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transactionflattener_ts",
+      "target": "server_builtinrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transactionFlattener.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transactionflattener_ts",
+      "target": "server_transactionflattener_flattentransactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transactionFlattener.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_sourceloader_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_extracttemplateliterals",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_loadfragments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_resolvenestedreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_getfragment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_getallfragments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_extractnamedgqlquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_resolveallrefs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_expandqueries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_getexpandedquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_ts",
+      "target": "server_graphqlexpander_buildvariablestemplate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_loadfragments",
+      "target": "server_graphqlexpander_extracttemplateliterals",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_loadfragments",
+      "target": "server_graphqlexpander_resolvenestedreferences",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_expandqueries",
+      "target": "server_graphqlexpander_extracttemplateliterals",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_expandqueries",
+      "target": "server_graphqlexpander_extractnamedgqlquery",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_expandqueries",
+      "target": "server_graphqlexpander_resolveallrefs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_models_transferreferencemodel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_extractreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_extractreferencevalues",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_extractreferencemap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_getpresentreferencefields",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_getnontaxreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_getfirstnontaxreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_countreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_hasreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_hastaxreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_ts",
+      "target": "server_transferreferenceextractor_findmatchingreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_getfirstnontaxreference",
+      "target": "server_transferreferenceextractor_getnontaxreferences",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_countreferences",
+      "target": "server_transferreferenceextractor_extractreferencevalues",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_hasreferences",
+      "target": "server_transferreferenceextractor_countreferences",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceextractor_findmatchingreference",
+      "target": "server_transferreferenceextractor_extractreferencemap",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceExtractor.ts",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_userrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_graphqlexpander_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_mongoquerygenerator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_mongoexecutor_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_loadrulesheet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_getsessionrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_applyrulestostep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_evaluaterulecondition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_genid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_plannextstep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_detectaccounttype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_createsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_advancesession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_respondtostep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L330",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_getsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L381",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_executemongostep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L387",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_executeinternalstep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L425",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_ts",
+      "target": "server_orchestrator_extractqueryparams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L454",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_applyrulestostep",
+      "target": "server_orchestrator_evaluaterulecondition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_plannextstep",
+      "target": "server_orchestrator_detectaccounttype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_createsession",
+      "target": "server_orchestrator_genid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_plannextstep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L231",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_genid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L239",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_applyrulestostep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_detectaccounttype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L260",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_extractqueryparams",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_executemongostep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L298",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_orchestrator_executeinternalstep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_respondtostep",
+      "target": "server_orchestrator_advancesession",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L347",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_respondtostep",
+      "target": "server_orchestrator_executemongostep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L360",
+      "weight": 1.0
+    },
+    {
+      "source": "server_builtinrules_ts",
+      "target": "server_builtinrules_tracecodepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "server_builtinrules_ts",
+      "target": "server_builtinrules_applybuiltinrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "server_builtinrules_ts",
+      "target": "server_builtinrules_validatepkgtransaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L231",
+      "weight": 1.0
+    },
+    {
+      "source": "server_builtinrules_ts",
+      "target": "server_builtinrules_getbuiltinrulesdescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "server_builtinrules_applybuiltinrules",
+      "target": "server_builtinrules_tracecodepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/builtInRules.ts",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_ts",
+      "target": "server_sourceloader_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_ts",
+      "target": "server_graphqlexpander_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_ts",
+      "target": "server_llm_isollamaavailable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_ts",
+      "target": "server_llm_buildllmcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_ts",
+      "target": "server_llm_extractmethod",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_ts",
+      "target": "server_llm_analyzewithllm",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_buildllmcontext",
+      "target": "server_llm_extractmethod",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_analyzewithllm",
+      "target": "server_llm_isollamaavailable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_analyzewithllm",
+      "target": "server_llm_buildllmcontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/llm.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transformoutsimulator_ts",
+      "target": "server_transformoutsimulator_simulatetransformout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transformoutsimulator_ts",
+      "target": "server_transformoutsimulator_removeparentfromchildren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transformoutsimulator_ts",
+      "target": "server_transformoutsimulator_simulatefolioouttransform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transformoutsimulator_simulatetransformout",
+      "target": "server_transformoutsimulator_removeparentfromchildren",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transformOutSimulator.ts",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "server_sourceloader_loadsourcefiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "server_sourceloader_getsourcefile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "server_sourceloader_getallsourcefiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "server_sourceloader_ts",
+      "target": "server_sourceloader_getsourcefilelist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/sourceLoader.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "server_correctionengine_ts",
+      "target": "server_builtinrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_correctionengine_ts",
+      "target": "server_userrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_correctionengine_ts",
+      "target": "server_correctionengine_correctpayload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "server_comparisonengine_ts",
+      "target": "server_builtinrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_comparisonengine_ts",
+      "target": "server_transactionflattener_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_comparisonengine_ts",
+      "target": "server_comparisonengine_comparetransactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "multer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_sourceloader_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_graphqlexpander_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_csvparser_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_comparisonengine_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_transformoutsimulator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_correctionengine_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_userrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_llm_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_builtinrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_transactionflattener_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_mongoquerygenerator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_mongoexecutor_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_transferquerygenerator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_transfervalidators_batchtransfervalidator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_transfervalidators_combinedtransfervalidator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_transferreferenceindexer_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_generaterandomnumbers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_formatfolioamount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_gettransactiontype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_getfolioamount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_genlineitemno",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L420",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_addtx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L426",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_extractfromfolios",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L433",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_extractfromroot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L449",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_deepsearch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L487",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_debugkeys",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L520",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_index_indextxdetails",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L542",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_ts",
+      "target": "server_orchestrator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L887",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_getfolioamount",
+      "target": "server_index_formatfolioamount",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_genlineitemno",
+      "target": "server_index_generaterandomnumbers",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L420",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_extractfromfolios",
+      "target": "server_index_addtx",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L439",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_extractfromroot",
+      "target": "server_index_extractfromfolios",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L457",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_deepsearch",
+      "target": "server_index_addtx",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L495",
+      "weight": 1.0
+    },
+    {
+      "source": "server_index_indextxdetails",
+      "target": "server_index_genlineitemno",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/index.ts",
+      "source_location": "L544",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "xlsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_loadtenantlist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_parsefolioid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_lookuptenant",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_getalltenants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_generatemongoquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_generateaccountlookupquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L232",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_ts",
+      "target": "server_mongoquerygenerator_autogeneratequeries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_autogeneratequeries",
+      "target": "server_mongoquerygenerator_parsefolioid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L254",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_autogeneratequeries",
+      "target": "server_mongoquerygenerator_lookuptenant",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L259",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_autogeneratequeries",
+      "target": "server_mongoquerygenerator_generateaccountlookupquery",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L264",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoquerygenerator_autogeneratequeries",
+      "target": "server_mongoquerygenerator_generatemongoquery",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoQueryGenerator.ts",
+      "source_location": "L266",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_ts",
+      "target": "mongodb",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_ts",
+      "target": "oidc_plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_ts",
+      "target": "server_mongoexecutor_getclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_ts",
+      "target": "server_mongoexecutor_findaccountid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_ts",
+      "target": "server_mongoexecutor_executeledgerquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_ts",
+      "target": "server_mongoexecutor_closemongoconnection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_findaccountid",
+      "target": "server_mongoexecutor_getclient",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "server_mongoexecutor_executeledgerquery",
+      "target": "server_mongoexecutor_getclient",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/mongoExecutor.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ts",
+      "target": "server_models_transferreferencemodel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ts",
+      "target": "server_transferreferenceindexer_foliolineindex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_addline",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_getlinebyid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_getlinesbyitemid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_has",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_size",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_clear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex",
+      "target": "server_transferreferenceindexer_foliolineindex_getalllines",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ts",
+      "target": "server_transferreferenceindexer_ledgertransactionindex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_addtransaction",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_indexreference",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_gettransaction",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_gettransactionsbyreference",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_clear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_size",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ts",
+      "target": "server_transferreferenceindexer_indexfoliolines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ts",
+      "target": "server_transferreferenceindexer_indexledgertransactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ts",
+      "target": "server_transferreferenceindexer_createindexes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex_addline",
+      "target": "server_transferreferenceindexer_foliolineindex_has",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_foliolineindex_clear",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_clear",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_ledgertransactionindex_indexreference",
+      "target": "server_transferreferenceindexer_foliolineindex_has",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_indexfoliolines",
+      "target": "server_transferreferenceindexer_foliolineindex_addline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_indexledgertransactions",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_addtransaction",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_indexledgertransactions",
+      "target": "server_transferreferenceindexer_ledgertransactionindex_indexreference",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L216",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_createindexes",
+      "target": "server_transferreferenceindexer_indexfoliolines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L255",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transferreferenceindexer_createindexes",
+      "target": "server_transferreferenceindexer_indexledgertransactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferReferenceIndexer.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "server_csvparser_ts",
+      "target": "xlsx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_csvparser_ts",
+      "target": "server_builtinrules_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server_csvparser_ts",
+      "target": "server_csvparser_derivelineitemno",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "server_csvparser_ts",
+      "target": "server_csvparser_parsecsvbuffer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/csvParser.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_simpletransfermatcher_ts",
+      "target": "server_models_transferreferencemodel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_simpletransfermatcher_ts",
+      "target": "transfermatchers_simpletransfermatcher_matchsimpletransfer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_simpletransfermatcher_ts",
+      "target": "transfermatchers_simpletransfermatcher_matchsimpletransferfromline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_simpletransfermatcher_ts",
+      "target": "transfermatchers_simpletransfermatcher_summarizereferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_simpletransfermatcher_ts",
+      "target": "transfermatchers_simpletransfermatcher_countavailablereferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "transfermatchers_simpletransfermatcher_matchsimpletransferfromline",
+      "target": "transfermatchers_simpletransfermatcher_matchsimpletransfer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/simpleTransferMatcher.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "target": "server_models_transferreferencemodel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "target": "server_transferreferenceindexer_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "target": "server_transferreferenceextractor_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "target": "transfermatchers_taxbasedtransfermatcher_matchtaxbasedtransfer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "target": "transfermatchers_taxbasedtransfermatcher_formatvalidationpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L263",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errormissingtransferdetails",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errormissingtransferlineitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_erroremptyreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errortaxreferencenotfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errornonontaxreferences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorledgertransactionnotfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorfoliolinenotfound",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_erroritemidmismatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorlineidmismatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorcircularreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorinvalidjson",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorinvalidpayloadstructure",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorvalidationtimeout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L205",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errorunknown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_errortousermessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_isrecoverableerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L265",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_shouldblockpayload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L272",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_errorhandler_ts",
+      "target": "transfervalidators_errorhandler_detectcircularreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errormissingtransferdetails",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errormissingtransferlineitem",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_erroremptyreferences",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errortaxreferencenotfound",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errornonontaxreferences",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorledgertransactionnotfound",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorfoliolinenotfound",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_erroritemidmismatch",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorlineidmismatch",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorcircularreference",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorinvalidjson",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorinvalidpayloadstructure",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorvalidationtimeout",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_errorhandler_errorunknown",
+      "target": "transfervalidators_errorhandler_createtransfererror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/errorHandler.ts",
+      "source_location": "L218",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "server_models_transferreferencemodel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "server_transferreferenceindexer_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "server_transfervalidators_combinedtransfervalidator_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "server_transferreferenceextractor_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "transfervalidators_batchtransfervalidator_validatetransferpayload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "transfervalidators_batchtransfervalidator_validatetransferpayloadsummary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L172",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "transfervalidators_batchtransfervalidator_formatbatchvalidationresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L190",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_batchtransfervalidator_ts",
+      "target": "transfervalidators_batchtransfervalidator_serializebatchresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L247",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_batchtransfervalidator_validatetransferpayloadsummary",
+      "target": "transfervalidators_batchtransfervalidator_validatetransferpayload",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "server_models_transferreferencemodel_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "server_transferreferenceindexer_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "server_transfermatchers_simpletransfermatcher_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "server_transfermatchers_taxbasedtransfermatcher_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "server_transferreferenceextractor_ts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "transfervalidators_combinedtransfervalidator_formatvalidationresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "server_transfervalidators_combinedtransfervalidator_ts",
+      "target": "transfervalidators_combinedtransfervalidator_tracevalidationpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L251",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_toast",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_showqueryapproval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_closequeryapproval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_approvequeryexecution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_copytext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_copymergedpayload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_jsonparse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_rendertable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_badge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_showcodetrace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_runcomparison",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_rendercomparisonresults",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_computebalancesummaryhtml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L355",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_fetchresendqueryformissing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L377",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_resolvemissingtransactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L395",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_renderjsoncomparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L496",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_jcjumpto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L534",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_jcgonext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L560",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_jcgoprev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L565",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_syncjsoncomparatorscroll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L571",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_generateresendquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L580",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_constructpayload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L599",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_generatemongoquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L631",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_executemongoquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L673",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_loadrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L752",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_saverules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L760",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_loadbuiltinrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L773",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_checkllmstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L786",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_runllmanalysis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L796",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_startorchestrator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L833",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_advanceorchestrator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L865",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_handleorchpending",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L879",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_orchapprovestep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L902",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_orchmodifystep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L925",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_orchrejectstep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L948",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_renderorchtimeline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L962",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_showorchresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L982",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_generatetransferquery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1009",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_validatealltransfers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1057",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_debugsingletransfer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1190",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_tracetransferreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1265",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_js",
+      "target": "client_app_executemongoquerywithapproval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1353",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_approvequeryexecution",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_approvequeryexecution",
+      "target": "client_app_closequeryapproval",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_copymergedpayload",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_runcomparison",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_runcomparison",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_runcomparison",
+      "target": "client_app_rendercomparisonresults",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_rendercomparisonresults",
+      "target": "client_app_rendertable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_rendercomparisonresults",
+      "target": "client_app_badge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L247",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_rendercomparisonresults",
+      "target": "client_app_fetchresendqueryformissing",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L279",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_rendercomparisonresults",
+      "target": "client_app_renderjsoncomparator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L331",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_rendercomparisonresults",
+      "target": "client_app_syncjsoncomparatorscroll",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L332",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_rendercomparisonresults",
+      "target": "client_app_computebalancesummaryhtml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L341",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L397",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L398",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_computebalancesummaryhtml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L468",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_renderjsoncomparator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L472",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_syncjsoncomparatorscroll",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L473",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_badge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L479",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_resolvemissingtransactions",
+      "target": "client_app_rendertable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L480",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_jcgonext",
+      "target": "client_app_jcjumpto",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L562",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_jcgoprev",
+      "target": "client_app_jcjumpto",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L567",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_generateresendquery",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L595",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_constructpayload",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L601",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_constructpayload",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L602",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_generatemongoquery",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L633",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_generatemongoquery",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L634",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_executemongoquery",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L675",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_executemongoquery",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L677",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_executemongoquery",
+      "target": "client_app_showqueryapproval",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L694",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_loadrules",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L757",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_saverules",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L768",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_loadbuiltinrules",
+      "target": "client_app_rendertable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L778",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_runllmanalysis",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L798",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_runllmanalysis",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L799",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_startorchestrator",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L835",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_startorchestrator",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L836",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_startorchestrator",
+      "target": "client_app_renderorchtimeline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L860",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_startorchestrator",
+      "target": "client_app_handleorchpending",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L861",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_advanceorchestrator",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L866",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_advanceorchestrator",
+      "target": "client_app_renderorchtimeline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L874",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_advanceorchestrator",
+      "target": "client_app_handleorchpending",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L875",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_handleorchpending",
+      "target": "client_app_showorchresult",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L897",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchapprovestep",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L907",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchapprovestep",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L908",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchapprovestep",
+      "target": "client_app_renderorchtimeline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L920",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchapprovestep",
+      "target": "client_app_handleorchpending",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L921",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchmodifystep",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L931",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchmodifystep",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L932",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchmodifystep",
+      "target": "client_app_renderorchtimeline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L943",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchmodifystep",
+      "target": "client_app_handleorchpending",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L944",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchrejectstep",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L956",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchrejectstep",
+      "target": "client_app_renderorchtimeline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L957",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_orchrejectstep",
+      "target": "client_app_handleorchpending",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L958",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_generatetransferquery",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1028",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_validatealltransfers",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1063",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_validatealltransfers",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1065",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_validatealltransfers",
+      "target": "client_app_rendertable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1135",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_debugsingletransfer",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1197",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_debugsingletransfer",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1201",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_tracetransferreference",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1272",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_tracetransferreference",
+      "target": "client_app_jsonparse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1276",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_executemongoquerywithapproval",
+      "target": "client_app_toast",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1356",
+      "weight": 1.0
+    },
+    {
+      "source": "client_app_executemongoquerywithapproval",
+      "target": "client_app_showqueryapproval",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "client/app.js",
+      "source_location": "L1378",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_loadfragments",
+      "target": "server_sourceloader_getsourcefile",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "server_graphqlexpander_expandqueries",
+      "target": "server_sourceloader_getsourcefile",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/graphqlExpander.ts",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_graphqlexpander_getexpandedquery",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_graphqlexpander_buildvariablestemplate",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_advancesession",
+      "target": "server_mongoquerygenerator_autogeneratequeries",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L286",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_executemongostep",
+      "target": "server_mongoexecutor_findaccountid",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L398",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_executemongostep",
+      "target": "server_mongoexecutor_executeledgerquery",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L403",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_executeinternalstep",
+      "target": "server_comparisonengine_comparetransactions",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L433",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_executeinternalstep",
+      "target": "server_transactionflattener_flattentransactions",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L439",
+      "weight": 1.0
+    },
+    {
+      "source": "server_orchestrator_executeinternalstep",
+      "target": "server_correctionengine_correctpayload",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/orchestrator.ts",
+      "source_location": "L440",
+      "weight": 1.0
+    },
+    {
+      "source": "server_llm_buildllmcontext",
+      "target": "server_sourceloader_getsourcefile",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/llm.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "server_correctionengine_correctpayload",
+      "target": "server_userrules_applyuserrules",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "server_correctionengine_correctpayload",
+      "target": "server_builtinrules_applybuiltinrules",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/correctionEngine.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "server_comparisonengine_comparetransactions",
+      "target": "server_transactionflattener_flattentransactions",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "server_comparisonengine_comparetransactions",
+      "target": "server_builtinrules_applybuiltinrules",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "server_comparisonengine_comparetransactions",
+      "target": "server_builtinrules_validatepkgtransaction",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/comparisonEngine.ts",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "transfermatchers_taxbasedtransfermatcher_matchtaxbasedtransfer",
+      "target": "server_transferreferenceextractor_getnontaxreferences",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "transfermatchers_taxbasedtransfermatcher_matchtaxbasedtransfer",
+      "target": "server_transferreferenceextractor_extractreferencevalues",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "transfermatchers_taxbasedtransfermatcher_matchtaxbasedtransfer",
+      "target": "server_transferreferenceextractor_getfirstnontaxreference",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferMatchers/taxBasedTransferMatcher.ts",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_batchtransfervalidator_validatetransferpayload",
+      "target": "server_transferreferenceindexer_createindexes",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_batchtransfervalidator_validatetransferpayload",
+      "target": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_batchtransfervalidator_validatetransferpayload",
+      "target": "server_transferreferenceextractor_extractreferencevalues",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/batchTransferValidator.ts",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "server_transferreferenceextractor_extractreferencemap",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "transfermatchers_simpletransfermatcher_countavailablereferences",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "transfermatchers_simpletransfermatcher_summarizereferences",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "transfermatchers_simpletransfermatcher_matchsimpletransferfromline",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "server_transferreferenceextractor_hastaxreference",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "transfermatchers_taxbasedtransfermatcher_matchtaxbasedtransfer",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "transfervalidators_combinedtransfervalidator_validatetransferreference",
+      "target": "transfermatchers_taxbasedtransfermatcher_formatvalidationpath",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server/transferValidators/combinedTransferValidator.ts",
+      "source_location": "L173",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

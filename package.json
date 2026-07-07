@@ -1,0 +1,27 @@
+{
+  "name": "folio-rca-tool",
+  "version": "1.0.0",
+  "description": "Folio Transaction Debugger & RCA Tool",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server/index.js",
+    "dev": "tsx watch server/index.ts",
+    "rca-tool": "tsx server/index.ts"
+  },
+  "dependencies": {
+    "@mongodb-js/oidc-plugin": "^2.0.8",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^7.2.0",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

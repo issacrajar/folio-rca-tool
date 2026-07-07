@@ -1,0 +1,576 @@
+<!-- Copyright (C) Agilysys, Inc. All rights reserved. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folio RCA Tool</title>
+  <style>
+    :root {
+      --bg: #1e1e2e; --surface: #282840; --border: #3a3a5c;
+      --text: #cdd6f4; --subtext: #a6adc8; --accent: #89b4fa;
+      --green: #a6e3a1; --red: #f38ba8; --yellow: #f9e2af; --peach: #fab387;
+      --font: 'Segoe UI', system-ui, sans-serif; --mono: 'Fira Code', 'Consolas', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; }
+    h1 { text-align: center; padding: 1rem; color: var(--accent); font-size: 1.5rem; }
+    .tabs { display: flex; gap: 2px; background: var(--surface); padding: 0.5rem 1rem 0; overflow-x: auto; }
+    .tab { padding: 0.5rem 1rem; cursor: pointer; border: 1px solid transparent; border-bottom: none;
+           border-radius: 6px 6px 0 0; color: var(--subtext); font-size: 0.85rem; white-space: nowrap; }
+    .tab.active { background: var(--bg); color: var(--accent); border-color: var(--border); }
+    .tab:hover { color: var(--text); }
+    .panel { display: none; padding: 1.5rem; }
+    .panel.active { display: block; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+    label { display: block; font-size: 0.85rem; color: var(--subtext); margin-bottom: 0.3rem; }
+    input, select, textarea { width: 100%; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border);
+      border-radius: 4px; color: var(--text); font-family: var(--mono); font-size: 0.85rem; }
+    textarea { min-height: 150px; resize: vertical; }
+    button { padding: 0.5rem 1rem; background: var(--accent); color: var(--bg); border: none; border-radius: 4px;
+      cursor: pointer; font-weight: 600; font-size: 0.85rem; margin: 0.3rem 0.3rem 0.3rem 0; }
+    button:hover { opacity: 0.9; }
+    button.secondary { background: var(--border); color: var(--text); }
+    button.danger { background: var(--red); }
+    .row { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .row > * { flex: 1; min-width: 200px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    th, td { padding: 0.4rem 0.6rem; border: 1px solid var(--border); text-align: left; }
+    th { background: var(--surface); color: var(--accent); position: sticky; top: 0; }
+    .scroll-table { max-height: 400px; overflow: auto; }
+    pre { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 0.8rem;
+      overflow: auto; max-height: 500px; font-size: 0.8rem; font-family: var(--mono); white-space: pre-wrap; }
+    .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 10px; font-size: 0.75rem; font-weight: 600; }
+    .badge-red { background: var(--red); color: var(--bg); }
+    .badge-green { background: var(--green); color: var(--bg); }
+    .badge-yellow { background: var(--yellow); color: var(--bg); }
+    .badge-peach { background: var(--peach); color: var(--bg); }
+    .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.8rem; margin-bottom: 1rem; }
+    .summary-item { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 0.8rem; text-align: center; }
+    .summary-item .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+    .summary-item .lbl { font-size: 0.75rem; color: var(--subtext); }
+    .collapsible { cursor: pointer; user-select: none; }
+    .collapsible::before { content: '▶ '; font-size: 0.7rem; }
+    .collapsible.open::before { content: '▼ '; }
+    .collapsible-content { display: none; padding-left: 1rem; }
+    .collapsible-content.open { display: block; }
+    .diff-add { background: rgba(166,227,161,0.15); }
+    .diff-remove { background: rgba(243,139,168,0.15); }
+    .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--border);
+      border-top-color: var(--accent); border-radius: 50%; animation: spin 0.6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .toast { position: fixed; bottom: 1rem; right: 1rem; background: var(--green); color: var(--bg);
+      padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.85rem; z-index: 999; display: none; }
+    .status { padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; margin: 0.5rem 0; }
+    .status-ok { background: rgba(166,227,161,0.2); color: var(--green); }
+    .status-err { background: rgba(243,139,168,0.2); color: var(--red); }
+    .help { font-size: 0.75rem; color: var(--subtext); margin-top: 0.3rem; font-style: italic; }
+    /* JSON Comparator */
+    .jc-wrap { display: flex; gap: 4px; max-height: 500px; }
+    .jc-pane { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+    .jc-header { font-size: 0.8rem; font-weight: 700; padding: 0.4rem 0.6rem; background: var(--surface); border: 1px solid var(--border); border-bottom: none; border-radius: 6px 6px 0 0; color: var(--red); }
+    .jc-code { overflow: auto; max-height: 460px; background: var(--bg); border: 1px solid var(--border); border-radius: 0 0 6px 6px; font-family: var(--mono); font-size: 0.75rem; line-height: 1.45; position: relative; }
+    .jc-line { padding: 0 0.6rem; white-space: pre; }
+    .jc-del { background: rgba(243,139,168,0.15); color: var(--red); }
+    .jc-add { background: rgba(166,227,161,0.15); color: var(--green); }
+    /* JSON Comparator navigation */
+    .jc-nav { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .jc-nav-btn { padding: 0.35rem 0.9rem; background: var(--accent); color: var(--bg); border: none;
+      border-radius: 4px; cursor: pointer; font-weight: 700; font-size: 0.8rem; }
+    .jc-nav-btn:hover { opacity: 0.85; }
+    .jc-nav-label { font-size: 0.8rem; color: var(--subtext); min-width: 110px; text-align: center; }
+    .jc-focus { outline: 3px solid var(--yellow); outline-offset: -1px; background: rgba(249,226,175,0.35) !important; color: #fff !important; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Folio RCA Tool</h1>
+
+  <div class="tabs" id="tabs">
+    <div class="tab active" data-panel="inputs">📥 Inputs</div>
+    <div class="tab" data-panel="orchestrator">🎯 Orchestrator</div>
+    <div class="tab" data-panel="comparison">📊 Comparison</div>
+    <div class="tab" data-panel="resend">🔄 Resend Query</div>
+    <div class="tab" data-panel="mongoQuery">🗄️ Mongo Query</div>
+    <div class="tab" data-panel="payload">📦 Payload Viewer</div>
+    <div class="tab" data-panel="rules">📝 Rules Editor</div>
+    <div class="tab" data-panel="llm">🤖 LLM Analysis</div>
+    <div class="tab" data-panel="mongoLogs">📋 Query Logs</div>
+    <div class="tab" data-panel="flowDiagram">📐 Flow Diagram</div>
+  </div>
+
+  <!-- ==================== ORCHESTRATOR ==================== -->
+  <div class="panel" id="orchestrator">
+    <div class="card">
+      <h3>🎯 Orchestrator — Human-in-the-Loop Execution</h3>
+      <p class="help">Paste folioTransactions in the Inputs tab, then click "Start Orchestrated Analysis" to run a step-by-step analysis. Each Graph/Mongo query will be shown for your approval before execution.</p>
+      <div class="row" style="margin-top:1rem;">
+        <div>
+          <label>Rule Overrides (JSON array, optional)</label>
+          <textarea id="orchRules" rows="3" placeholder='[{"id":"r1","condition":"step.intent === \"fetch_graph_data\"","action":"require_approval","priority":10}]'></textarea>
+        </div>
+      </div>
+      <button onclick="startOrchestrator()">▶️ Start Orchestrated Analysis</button>
+      <button class="secondary" onclick="advanceOrchestrator()">⏩ Continue</button>
+    </div>
+
+    <!-- Step Timeline -->
+    <div class="card">
+      <h3>📋 Execution Steps</h3>
+      <div id="orchTimeline" style="font-size:0.85rem;"></div>
+    </div>
+
+    <!-- Approval Popup -->
+    <div class="card" id="orchApprovalCard" style="display:none; border-color: var(--yellow);">
+      <h3 style="color:var(--yellow);">⚠️ Approval Required</h3>
+      <div id="orchApprovalTitle" style="font-weight:700; margin:0.5rem 0;"></div>
+      <div id="orchApprovalDesc" style="color:var(--subtext); font-size:0.85rem; margin-bottom:0.8rem;"></div>
+      <div id="orchApprovalRules" style="font-size:0.75rem; color:var(--peach); margin-bottom:0.5rem;"></div>
+      <label>Generated Query:</label>
+      <textarea id="orchApprovalQuery" rows="10" style="font-family:var(--mono);font-size:0.75rem;"></textarea>
+      <label style="margin-top:0.5rem;">Variables:</label>
+      <pre id="orchApprovalVars" style="max-height:150px;"></pre>
+
+      <!-- For graph queries: response input -->
+      <div id="orchGraphResponseSection" style="margin-top:1rem;">
+        <label>Paste Graph/API Response (after executing the query above):</label>
+        <textarea id="orchGraphResponse" rows="6" placeholder="Paste the response JSON here after running the query..."></textarea>
+      </div>
+
+      <div style="margin-top:1rem; display:flex; gap:0.5rem;">
+        <button onclick="orchApproveStep()">✅ Approve & Execute</button>
+        <button class="secondary" onclick="orchModifyStep()">✏️ Modify & Execute</button>
+        <button class="danger" onclick="orchRejectStep()">❌ Reject</button>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="card" id="orchResultCard" style="display:none;">
+      <h3>✅ Orchestration Complete</h3>
+      <div id="orchResultSummary"></div>
+      <button class="secondary" onclick="copyText('orchResultPayload')">Copy Corrected Payload</button>
+      <pre id="orchResultPayload" style="max-height:400px;"></pre>
+    </div>
+  </div>
+
+  <!-- ==================== INPUTS ==================== -->
+  <div class="panel active" id="inputs">
+
+    <!-- Environment Selector (must be applied before running any MongoDB queries) -->
+    <div class="card" style="border-color: var(--yellow);">
+      <h3>🌐 MongoDB Environment</h3>
+      <p class="help">Select "Production" to use the default OIDC-authenticated cluster, or "Other" to connect to a custom environment with your own connection string and tenant details.</p>
+      <div class="row" style="margin-top:0.6rem;">
+        <div style="max-width:220px;">
+          <label>Environment</label>
+          <select id="envSelector" onchange="onEnvChange()" style="font-weight:600;">
+            <option value="production">🏭 Production (default)</option>
+            <option value="other">🔧 Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Custom environment fields — shown only when "Other" is selected -->
+      <div id="customEnvFields" style="display:none; margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border);">
+        <div style="margin-bottom:0.8rem;">
+          <label>MongoDB Connection String <span style="color:var(--red);">*</span></label>
+          <input type="password" id="customMongoUri" placeholder="mongodb+srv://user:password@cluster.mongodb.net/admin" autocomplete="off">
+          <p class="help">Full connection string including credentials. Stored only in memory — never sent to any external service.</p>
+        </div>
+        <div class="row">
+          <div>
+            <label>Tenant ID <span style="color:var(--red);">*</span></label>
+            <input type="text" id="customTenantId" placeholder="e.g., 65a3b2c1d4e5f60001234567">
+          </div>
+          <div>
+            <label>Property ID <span style="color:var(--red);">*</span></label>
+            <input type="text" id="customPropertyId" placeholder="e.g., JAXFW">
+          </div>
+          <div>
+            <label>DB Name <span style="color:var(--subtext);">(optional)</span></label>
+            <input type="text" id="customDbName" placeholder="e.g., Stay-MI-Dev-01">
+            <p class="help">Defaults to Stay-MI-Prod-01 if blank</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:0.6rem; display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap;">
+        <button onclick="applyEnvironment()" style="background:var(--yellow);color:var(--bg);">✅ Apply Environment</button>
+        <div id="envStatusBadge"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>CSV Upload (Optional — auto-fetched from MongoDB if not provided)</h3>
+      <label>Upload CSV/XLSX file</label>
+      <input type="file" id="csvFile" accept=".csv,.xlsx,.xls">
+      <p class="help">Optional. If not provided, ledger data is fetched directly from MongoDB. Columns: lineItemNo, totalAmount, type, originalType, sourceAccountType, destinationAccountType</p>
+    </div>
+    <div class="card">
+      <h3>Folio Transactions (Resend Result JSON)</h3>
+      <label>Paste folioTransactions array</label>
+      <textarea id="folioJsonInput" placeholder='[{"folioId":"...","folioTransactionDetails":[...]}]'></textarea>
+      <div id="jsonValidation"></div>
+    </div>
+    <div class="card">
+      <h3>Account Type</h3>
+      <div class="row">
+        <div>
+          <label>Account Type</label>
+          <select id="accountType">
+            <option value="guest">Guest</option>
+            <option value="group">Group</option>
+            <option value="house">House Account</option>
+          </select>
+        </div>
+        <div>
+          <label>Confirmation Number</label>
+          <input type="text" id="confirmationNumber" placeholder="e.g., 9893980801">
+        </div>
+        <div>
+          <label>Folio Number</label>
+          <input type="text" id="folioNumber" placeholder="e.g., 1000345">
+        </div>
+        <div>
+          <label>House Account Number</label>
+          <input type="text" id="houseAccountNumber" placeholder="e.g., HA001">
+        </div>
+        <div>
+          <label>Property ID</label>
+          <input type="text" id="propertyId" placeholder="e.g., JAXFW">
+        </div>
+      </div>
+    </div>
+    <button id="runComparisonBtn" onclick="runComparison()">▶ Run Comparison</button>
+    <div id="runStatus" style="margin-top:0.6rem;font-size:0.85rem;"></div>
+  </div>
+
+  <!-- ==================== COMPARISON ==================== -->
+  <div class="panel" id="comparison">
+    <div id="compSummary"></div>
+    <div class="card"><h3>Balance Summary (Per Window)</h3><div id="balanceTable"></div></div>
+    <div class="card"><h3>Missing Transactions <span id="missingBadge"></span></h3><div id="missingTable" class="scroll-table"></div>
+      <!-- Resolve Missing Transactions -->
+      <div id="resolveMissingSection" style="display:none; margin-top:1rem; border-top:1px solid var(--border); padding-top:1rem;">
+        <h4 style="color:var(--yellow);">⚡ Resolve Missing Transactions</h4>
+        <p class="help">The graph query below is pre-filled from your folioTransactions. Copy and run it, then paste the graph response to construct the missing transaction payloads.</p>
+        <div style="margin:0.5rem 0;">
+          <button class="secondary" onclick="copyText('missingGraphQuery')">Copy Query</button>
+          <button class="secondary" onclick="copyText('missingGraphVars')">Copy Variables</button>
+        </div>
+        <details>
+          <summary style="cursor:pointer;color:var(--accent);font-size:0.85rem;">View Graph Query & Variables</summary>
+          <pre id="missingGraphQuery" style="max-height:200px;margin-top:0.5rem;">No query yet.</pre>
+          <pre id="missingGraphVars" style="max-height:150px;margin-top:0.5rem;">{}</pre>
+        </details>
+        <label style="margin-top:0.8rem;">Paste Graph Response JSON</label>
+        <textarea id="missingGraphResponse" rows="6" placeholder='{"reservations":{"manyByThirdPartyConfirmation":[...]}}'></textarea>
+        <button onclick="resolveMissingTransactions()" style="background:var(--green);margin-top:0.5rem;">🔧 Resolve Missing & Rebuild Payload</button>
+        <div id="resolveResult" style="margin-top:0.5rem;"></div>
+      </div>
+    </div>
+    <div class="card"><h3>Extra Transactions <span id="extraBadge"></span></h3><div id="extraTable" class="scroll-table"></div></div>
+    <div class="card"><h3>Mismatches <span id="mismatchBadge"></span></h3><div id="mismatchTable" class="scroll-table"></div></div>
+    <div class="card"><h3>PKG Validation</h3><div id="pkgTable" class="scroll-table"></div></div>
+    <div class="card">
+      <h3>🔧 Auto-Correction <span id="correctionBadge"></span></h3>
+      <p class="help">Diffs are automatically computed using Priority 1 (built-in) → Priority 2 (user rules) → Priority 3 (code logic).</p>
+      <div id="diffTable" class="scroll-table"></div>
+    </div>
+    <div class="card">
+      <h3>📊 JSON Comparator (Original ↔ Corrected)</h3>
+      <button class="secondary" onclick="copyMergedPayload()" style="margin-bottom:0.5rem;">📋 Copy Corrected JSON</button>
+      <div id="jsonComparator"></div>
+    </div>
+    <div class="card" id="correctedPayloadCard" style="display:none;">
+      <h3>Corrected Payload</h3>
+      <div id="correctedBalanceSummary" style="margin-bottom:0.5rem;"></div>
+      <button class="secondary" onclick="copyText('correctedPayloadOutput')">Copy Corrected Payload</button>
+      <pre id="correctedPayloadOutput">Run comparison to see corrected payload.</pre>
+    </div>
+
+    <!-- Deep Reference Analysis (runs after comparison) -->
+    <div class="card" id="deepReferenceCard" style="display:none; border-color: var(--peach);">
+      <h3>🔗 Deep Reference Analysis</h3>
+      <p class="help">Validates transfer reference IDs, tax reference chains, and reference ID links (adjustmentReferenceId, refundReferenceId, sourceFolioLineItemId, correctionReferenceId, transferReferenceId) for all transactions with folioTransferDetails.</p>
+
+      <!-- MongoDB query used to fetch the data being analysed -->
+      <details id="deepRefQueryDetails" style="margin-bottom:0.8rem;">
+        <summary style="cursor:pointer;color:var(--accent);font-size:0.85rem;font-weight:600;">🗄️ MongoDB Query Used for This Analysis</summary>
+        <div style="margin-top:0.5rem;">
+          <button class="secondary" style="font-size:0.78rem;padding:0.3rem 0.7rem;" onclick="copyText('deepRefMongoQuery')">📋 Copy Query</button>
+          <pre id="deepRefMongoQuery" style="margin-top:0.4rem;max-height:300px;font-size:0.75rem;">Run comparison first to see the query.</pre>
+        </div>
+      </details>
+
+      <button onclick="runDeepReferenceAnalysis()" style="background:var(--peach);color:var(--bg);">🔍 Run Deep Reference Analysis</button>
+      <div id="deepReferenceStatus" style="margin-top:0.5rem;"></div>
+      <div id="deepReferenceResults" style="margin-top:0.5rem;"></div>
+    </div>
+
+    <!-- Deep Analysis Corrected Payload (auto-populated after deep reference analysis) -->
+    <div class="card" id="deepCorrectedPayloadCard" style="display:none; border-color: var(--green);">
+      <h3>✅ Deep Analysis Corrected Payload</h3>
+      <p class="help">This payload stacks the Deep Reference Analysis fixes on top of the existing comparison corrections:
+        <strong style="color:var(--red);">folioTransferDetails removed</strong> for tax-exempt lines ·
+        <strong style="color:var(--peach);">trnsfrFromLineItemNo updated</strong> for mismatches.</p>
+      <div id="deepCorrectedDiffs" style="margin-bottom:0.8rem;"></div>
+      <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap;">
+        <button onclick="copyDeepCorrectedPayload()" style="background:var(--green);color:var(--bg);">📋 Copy Deep Corrected Payload</button>
+      </div>
+      <!-- Side-by-side JSON diff (Original ↔ Deep Corrected) -->
+      <h4 style="margin:0.8rem 0 0.3rem;color:var(--accent);">📊 JSON Diff (Original ↔ Deep Corrected)</h4>
+      <div id="deepJsonComparator" style="margin-bottom:0.8rem;"></div>
+      <details style="margin-top:0.5rem;">
+        <summary style="cursor:pointer;color:var(--subtext);font-size:0.85rem;">Show full corrected JSON</summary>
+        <pre id="deepCorrectedPayloadOutput" style="max-height:600px;margin-top:0.5rem;"></pre>
+      </details>
+    </div>
+  </div>
+
+  <!-- ==================== RESEND QUERY ==================== -->
+  <div class="panel" id="resend">
+    <div class="card">
+      <h3>Generate Resend GraphQL Query</h3>
+      <p class="help">Select account type and fill parameters in the Inputs tab, then click Generate.</p>
+      <button onclick="generateResendQuery()">Generate Query</button>
+      <button class="secondary" onclick="copyText('resendQueryOutput')">Copy Query</button>
+      <button class="secondary" onclick="copyText('resendVarsOutput')">Copy Variables</button>
+    </div>
+    <div class="card"><h3>Expanded Query</h3><pre id="resendQueryOutput">Click "Generate Query" to see the expanded query.</pre></div>
+    <div class="card"><h3>Variables</h3><pre id="resendVarsOutput">{}</pre></div>
+  </div>
+
+  <!-- ==================== MONGO QUERY GENERATOR ==================== -->
+  <div class="panel" id="mongoQuery">
+    <div class="card">
+      <h3>🗄️ Auto-Generate Mongo Query</h3>
+      <p class="help">Paste the folioTransactions JSON in the Inputs tab. This will auto-extract PropertyCode, chargePostingSequenceNumber, look up tenantId/propertyId, and generate the MongoDB query — no Excel needed.</p>
+      <div class="row">
+        <div>
+          <label>Account ID (from Step 1 result)</label>
+          <input type="text" id="mongoAccountId" placeholder="e.g., 69db8f533c73562a489ca8ac">
+        </div>
+      </div>
+      <button onclick="generateMongoQuery()">🗄️ Generate Mongo Query</button>
+      <button onclick="executeMongoQuery()" style="background:var(--green)">⚡ Fetch from MongoDB & Compare</button>
+    </div>
+    <div class="card">
+      <h3>Step 1: Extracted Info</h3>
+      <div id="mongoExtractedInfo"></div>
+    </div>
+    <div class="card" id="mongoResultCard" style="display:none">
+      <h3>📋 MongoDB Result</h3>
+      <div id="mongoResultInfo"></div>
+      <div id="mongoResultTable" class="scroll-table" style="margin-top:0.5rem;"></div>
+    </div>
+    <div class="card">
+      <h3>Step 2: Find Account ID</h3>
+      <p class="help">Run this query in MongoDB to get the accountId, then paste it above.</p>
+      <button class="secondary" onclick="copyText('mongoAccountLookup')">Copy Query</button>
+      <pre id="mongoAccountLookup">Generate to see the query.</pre>
+    </div>
+    <div class="card">
+      <h3>Step 3: Ledger Transactions Aggregation Query</h3>
+      <p class="help">Run this on the <code>ledgerTransactions</code> collection to get all folio line items. Export the result as CSV to use in the Comparison tab.</p>
+      <button class="secondary" onclick="copyText('mongoAggQuery')">Copy Query</button>
+      <pre id="mongoAggQuery">Generate to see the query.</pre>
+    </div>
+  </div>
+
+  <!-- ==================== PAYLOAD VIEWER ==================== -->
+  <div class="panel" id="payload">
+    <div class="card">
+      <h3>Construct Payload from Graph Response</h3>
+      <label>Paste raw GraphQL response JSON</label>
+      <textarea id="graphResponseInput" placeholder='{"reservations":{"manyByThirdPartyConfirmation":[...]}}'></textarea>
+      <button onclick="constructPayload()">Construct Payload</button>
+    </div>
+    <div class="card"><h3>Code Path Trace</h3><div id="traceOutput"></div></div>
+    <div class="card">
+      <h3>Constructed Payload</h3>
+      <button class="secondary" onclick="copyText('payloadOutput')">Copy Payload</button>
+      <pre id="payloadOutput">Click "Construct Payload" to build.</pre>
+    </div>
+  </div>
+
+
+   <!-- ==================== RULES EDITOR ==================== -->
+   <div class="panel" id="rules">
+     <div class="card">
+       <h3>Built-in Rules (Priority 1 — Immutable)</h3>
+       <div id="builtInRulesList"></div>
+     </div>
+     <div class="card">
+       <h3>User Rules (Priority 2 — Editable)</h3>
+       <textarea id="rulesEditor" rows="12" placeholder="IF type=TRANSFER AND originalType=PAYMENT THEN transType=SET AND amount=NEGATE"></textarea>
+       <p class="help">Format: IF field=value [AND field=value...] THEN field=value [AND field=value...]</p>
+       <button onclick="saveRules()">💾 Save Rules</button>
+       <button class="secondary" onclick="loadRules()">↻ Reload</button>
+     </div>
+   </div>
+
+   <!-- ==================== LLM ANALYSIS ==================== -->
+  <div class="panel" id="llm">
+    <div class="card">
+      <h3>Local LLM Analysis (Ollama)</h3>
+      <div id="llmStatus"></div>
+      <label>Transaction Data (JSON)</label>
+      <textarea id="llmTransactionInput" rows="6" placeholder='{"lineItemNo":"123",...}'></textarea>
+      <label>Code Path Trace (JSON, optional)</label>
+      <textarea id="llmTraceInput" rows="4" placeholder='[{"transactionId":"...","action":"included",...}]'></textarea>
+      <div class="row">
+        <div>
+          <label>Model</label>
+          <input type="text" id="llmModel" value="llama3.2" placeholder="llama3.2">
+        </div>
+      </div>
+      <button onclick="runLlmAnalysis()">🤖 Analyze</button>
+    </div>
+    <div class="card"><h3>LLM Explanation</h3><pre id="llmOutput">Click "Analyze" to get an explanation.</pre></div>
+  </div>
+
+   <div class="toast" id="toast"></div>
+
+    <!-- Account Verification Modal (Initial Check) -->
+    <div id="accountVerificationModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
+      <div style="background:var(--surface);border:2px solid var(--yellow);border-radius:12px;padding:24px;max-width:600px;width:90%;max-height:80vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+          <h3 style="margin:0;color:var(--yellow);">🔍 Verify Account Information</h3>
+          <button onclick="cancelAccountVerification()" style="background:none;border:none;color:var(--subtext);cursor:pointer;font-size:1.5rem;padding:0;">✕</button>
+        </div>
+
+        <p style="color:var(--subtext);margin-bottom:16px;font-size:0.9rem;">
+          The system has extracted the following account information from your folio transactions. Please verify it's correct before proceeding with the database query.
+        </p>
+
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:0.9rem;">
+            <div>
+              <div style="color:var(--subtext);font-size:0.8rem;margin-bottom:4px;">Property Code</div>
+              <div id="verifyPropertyCode" style="color:var(--accent);font-weight:600;font-family:var(--mono);">-</div>
+            </div>
+            <div>
+              <div style="color:var(--subtext);font-size:0.8rem;margin-bottom:4px;">Charge Posting Seq</div>
+              <div id="verifyChargePostingSeq" style="color:var(--accent);font-weight:600;font-family:var(--mono);">-</div>
+            </div>
+            <div>
+              <div style="color:var(--subtext);font-size:0.8rem;margin-bottom:4px;">Tenant ID</div>
+              <div id="verifyTenantId" style="color:var(--text);font-family:var(--mono);word-break:break-all;">-</div>
+            </div>
+            <div>
+              <div style="color:var(--subtext);font-size:0.8rem;margin-bottom:4px;">Property ID</div>
+              <div id="verifyPropertyId" style="color:var(--text);font-family:var(--mono);word-break:break-all;">-</div>
+            </div>
+            <div style="grid-column:1/-1;">
+              <div style="color:var(--subtext);font-size:0.8rem;margin-bottom:4px;">Account ID (from DB)</div>
+              <div id="verifyAccountId" style="color:var(--green);font-weight:600;font-family:var(--mono);word-break:break-all;">-</div>
+            </div>
+            <div style="grid-column:1/-1;">
+              <div style="color:var(--subtext);font-size:0.8rem;margin-bottom:4px;">Account Type</div>
+              <div id="verifyAccountType" style="color:var(--text);font-family:var(--mono);">-</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="verifyErrorMsg" style="display:none;background:rgba(243,139,168,0.15);color:var(--red);border:1px solid var(--red);border-radius:6px;padding:12px;margin-bottom:16px;font-size:0.85rem;"></div>
+
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button id="verifyApproveBtn" onclick="approveAccountVerification()" style="background:var(--green);color:var(--bg);padding:10px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:600;flex:1;min-width:140px;">✅ Confirm & Continue</button>
+          <button onclick="cancelAccountVerification()" style="background:var(--red);color:var(--bg);padding:10px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:600;flex:1;min-width:110px;">❌ Cancel</button>
+        </div>
+
+        <div style="margin-top:16px;padding:12px;background:var(--bg);border-left:4px solid var(--peach);border-radius:4px;font-size:0.8rem;color:var(--subtext);">
+          ℹ️ This information is extracted from your folio transactions and verified against the database. If incorrect, check your input data.
+        </div>
+      </div>
+    </div>
+
+    <!-- Query Approval Modal -->
+    <div id="queryApprovalModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
+      <div style="background:var(--surface);border:2px solid var(--accent);border-radius:12px;padding:24px;max-width:800px;width:90%;max-height:80vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+          <h3 style="margin:0;color:var(--accent);">🔐 Query Approval Required</h3>
+          <button onclick="closeQueryApproval()" style="background:none;border:none;color:var(--subtext);cursor:pointer;font-size:1.5rem;padding:0;">✕</button>
+        </div>
+
+        <p id="queryApprovalMsg" style="color:var(--subtext);margin-bottom:12px;"></p>
+
+        <label style="display:block;margin-bottom:8px;font-weight:600;">Query (Editable):</label>
+        <textarea id="queryApprovalData" style="width:100%;min-height:200px;padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:4px;color:var(--text);font-family:var(--mono);font-size:0.85rem;margin-bottom:16px;resize:vertical;"></textarea>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button onclick="approveQueryExecution()" style="background:var(--green);color:var(--bg);padding:10px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:600;">✅ Approve & Execute</button>
+          <button onclick="closeQueryApproval()" style="background:var(--red);color:var(--bg);padding:10px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:600;">❌ Cancel</button>
+        </div>
+
+        <div id="queryApprovalInfo" style="margin-top:16px;padding:12px;background:var(--bg);border-left:4px solid var(--yellow);border-radius:4px;font-size:0.85rem;color:var(--subtext);">
+          💡 You can edit the query above before execution. Any changes will be used for this request.
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+  <!-- ==================== MONGO QUERY LOGS ==================== -->
+  <div class="panel" id="mongoLogs">
+    <div class="card">
+      <h3>📋 MongoDB Query Log</h3>
+      <p class="help">Shows every MongoDB query executed this session, newest first. Includes collection, operation, parameters, duration, and status.</p>
+      <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;margin-top:0.6rem;">
+        <button onclick="refreshMongoLogs()" style="background:var(--accent);">🔄 Refresh</button>
+        <button onclick="clearMongoLogs()" class="danger">🗑️ Clear Logs</button>
+        <label style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--subtext);margin:0;">
+          <input type="checkbox" id="logsAutoRefresh" onchange="toggleLogsAutoRefresh()" style="width:auto;">
+          Auto-refresh every 5s
+        </label>
+        <span id="logsLastRefreshed" style="font-size:0.78rem;color:var(--subtext);"></span>
+      </div>
+    </div>
+
+    <!-- Summary row -->
+    <div id="logsSummary" class="summary-grid" style="margin-bottom:0;"></div>
+
+    <!-- Logs table -->
+    <div class="card" style="margin-top:1rem;">
+      <div class="scroll-table" style="max-height:600px;">
+        <table id="logsTable">
+          <thead>
+            <tr>
+              <th style="width:40px;">#</th>
+              <th style="width:140px;">Started At</th>
+              <th style="width:80px;">Duration</th>
+              <th style="width:80px;">Status</th>
+              <th style="width:200px;">Function</th>
+              <th style="width:150px;">Collection</th>
+              <th style="width:110px;">Operation</th>
+              <th style="width:60px;">Rows</th>
+            </tr>
+          </thead>
+          <tbody id="logsTableBody">
+            <tr><td colspan="8" style="text-align:center;color:var(--subtext);padding:1.5rem;">Click "Refresh" to load query logs.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FLOW DIAGRAM ==================== -->
+  <div class="panel" id="flowDiagram">
+    <div class="card" style="padding:0.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0.5rem 0.8rem;">
+        <h3 style="margin:0;">📐 Deep Reference Analysis — Block Diagram</h3>
+        <a href="deep-analysis-diagram.html" target="_blank"
+           style="font-size:0.8rem;color:var(--accent);text-decoration:none;border:1px solid var(--border);padding:0.3rem 0.8rem;border-radius:5px;">
+          ↗ Open full page
+        </a>
+      </div>
+      <iframe src="deep-analysis-diagram.html"
+              style="width:100%;height:82vh;border:none;border-radius:6px;background:var(--bg);"
+              title="Deep Reference Analysis Flow Diagram">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
+

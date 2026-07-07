@@ -1,0 +1,16 @@
+I want to develop a tool which does the job of the findMissingLines.js file I will provide the folioTransactions value
+and folio_1000345.csv this file. If any transactions is missing from the csv  then it has to provide me the
+full folioResend query by replacing all the constants used inside the query like this ${commonTransactionFields}.
+Replace all the constants used in this graph query.
+
+It should ask me to choose the account type like guest or group or house account and form the resend query as required.
+it should also let me know the full details of the missing line from the csv that I provide.
+I will provide the graph response using that it needs to form the object by going through the code(folioResendRoute.js).
+ It should also let me know the code which prevented it to not included in the payload. use local LLM model by
+ installing it in local. Use that AI to analyse the logic. Also I will provide some validations as a rule in text file.
+ Also read that Rules and change the payload accordingly.
+
+
+
+If any transaction has mismatch it should correct it and give me the correct payload without graph response.
+
